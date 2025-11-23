@@ -1,0 +1,7 @@
+﻿This program is an employee management system I created for the project. The goal was to keep it simple so a new user can easily add employees and modify salaries without any complicated setup.
+
+I organized the program by splitting the work into many small, focused functions. The main section displays the menu and handles user input, while the other functions perform tasks such as adding, updating, deleting, applying bonuses, and calculating statistics. All data is stored in a text file called employees.txt, where each line follows the format name,salary. For operations like updating or deleting, the program reads the file into a list, makes the necessary changes, and writes it back. This structure keeps the logic clear and makes testing straightforward.
+
+I used with open(...) for file handling so files close automatically, and added simple flags to track whether an employee exists before printing messages. There are still improvements that could be made, such as adding stronger input validation so letters don’t crash the program, handling duplicate names more reliably (for example by introducing an ID), and eventually switching to a proper database if the file grows too large.
+
+Through this project, I learned the value of breaking work into small, manageable functions and how useful testing is for catching bugs early. Writing both automated tests and a manual testing plan helped me identify issues and fix them step by step.
